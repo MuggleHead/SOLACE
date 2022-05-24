@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, flash, request, abort
 from flask_wtf import FlaskForm
-from wtforms import SelectField, SubmitField, SearchField, StringField
+from wtforms import SubmitField , StringField
 from wtforms.validators import DataRequired
 from flask_bootstrap import Bootstrap
 from flask_sqlalchemy import SQLAlchemy
