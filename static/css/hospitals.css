@@ -1,0 +1,70 @@
+.position1{
+    margin-top: -6%;
+    margin-left: 10%;
+}
+.position2{
+    margin-top: -6%;
+    margin-left: 15%;
+}
+.position3{
+    margin-top: -6%;
+    margin-left: 20%;
+}
+
+.textsize{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.spot{
+    color:#12A94F;
+}
+
+.textContainer{
+    text-align: center;
+    align-items: center;
+    padding: 2% 10%;
+    background-color: black;
+}
+
+.divdimensions{
+    display: flex;
+    background-color: #12A94F;
+    height: 100px;
+    width: 1200px;
+}
+
+.hospitalposition{
+    font-size: 2rem;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+
+.suppliesposition{
+    font-size: 2rem;
+    padding-top: 2%;
+    padding-left: 70%;
+}
+
+.hospital-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5% 12%;
+}
+
+.hospital-name{
+    font-size: 2rem;
+    color: white;
+    padding: 2% 0;
+}
+
+.hospital-info{
+    color: white;
+}
+
+.beds-position{
+    font-size: 2rem;
+}

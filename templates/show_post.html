@@ -1,0 +1,64 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+
+<div class="textContainer">
+      <div class="divdimensions">
+        <p class="hospitalposition textsize">{{ form_health }}</p>
+        <p class="suppliesposition textsize">&nbspSupplies</p>
+      </div>
+    </div>
+
+    {% if form_location == "Ahmedabad" %}
+        {% if form_health == "hospital" %}
+            {% for hospital in all_hospitals %}
+    <div class="hospital-container">
+      <div>
+      <img src="{{ hospital.img_url }}">
+      <h2 class="hospital-name">{{ hospital.hospital_name }}</h2>
+      <p class="hospital-info">{{ hospital.hospital_location }}</p>
+      </div>
+
+      <div>
+      <p class="beds-position textsize">{{ hospital.hospital_beds }} Beds</p>
+      <p class="beds-position textsize">{{ hospital.hospital_doctors }} Doctors</p>
+      <p class="beds-position textsize">{{ hospital.hospital_ambulance }} Ambulance</p>
+      </div>
+
+    </div>
+            {% endfor %}
+        {% elif form_health == "ngo" %}
+            {% for ngo in all_ngos %}
+    <div class="hospital-container">
+      <div>
+      <img src="{{ ngo.img_url }}">
+      <h2 class="hospital-name">{{ ngo.ngo_name }}</h2>
+      <p class="hospital-info">{{ ngo.ngo_location }}</p>
+      </div>
+
+      <div>
+      <p class="beds-position textsize">{{ ngo.ngo_volunteers }} volunteers</p>
+      </div>
+
+    </div>
+            {% endfor %}
+        {% elif form_health == "campaign" %}
+            {% for campaign in all_campaigns %}
+    <div class="hospital-container">
+      <div>
+      <img src="{{ campaign.img_url }}">
+      <h2 class="hospital-name">{{ campaign.campaign_name }}</h2>
+      <p class="hospital-info">{{ campaign.campaign_location }}</p>
+      </div>
+
+      <div>
+      <p class="beds-position textsize">{{ campaign.campaign_volunteers }} volunteers</p>
+      </div>
+        {% endfor %}
+        {% endif %}
+    {% endif %}
+
+{% include "footer.html" %}
+{% endblock %}
