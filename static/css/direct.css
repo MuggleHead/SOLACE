@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+ @import url('http://fonts.cdnfonts.com/css/julietta-messie');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #181818;
+}
+.container-fluid{
+    padding: 0% 12%;
+    flex-direction: column;
+}
+.sletterfont{
+    font-family: 'Julietta Messie', sans-serif;
+    color: white;
+    font-size: 4.5rem;
+}
+.navbar{
+    padding: 0;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    color: white;
+}
+.olacefont{
+    color: #1EA554;
+    font-size: 2rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.noHover{
+    pointer-events: none;
+}
+.picture{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.uimg{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.actual{
+    width: 800px;
+    height: 600px;
+}
+.words{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 321px;
+    margin-top: -40px;
+    width: 330px;
+    font-size: 26.5px;
+    justify-content: center;
+    align-self: center;
+}
+.grn{
+    color: #49DF86;
+}
+.words .grn span{
+    color: white;
+}
+.words2{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    padding: 120px ;
+}

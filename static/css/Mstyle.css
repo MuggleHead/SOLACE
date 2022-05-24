@@ -1,0 +1,405 @@
+@import url('https://fonts.cdnfonts.com/css/julietta-messie') ;
+body{
+  background-color: black;
+  }
+  /* navbar style */
+.dr{
+  background-color: black;
+}
+  .na{
+      padding: 0% 12%;
+  }
+
+  .navbar{
+      padding: 0;
+  }
+
+  .nav-item{
+      padding: 0 18px;
+  }
+
+  .nav-link{
+      color: white;
+  }
+
+  .sletterfont{
+      color: white;
+      font-family: 'Julietta Messie';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 3.5rem;
+  }
+
+  .olacefont{
+      color: #1EA554;
+      font-size: 2rem;
+      font-family: 'Jost', sans-serif;
+  }
+
+  .noHover{
+      pointer-events: none;
+  }
+
+  .FronDoc{
+filter: drop-shadow(0px 10px 6px rgba(64, 64, 64, 0.6));
+margin-top: 5rem;
+width: 70%;
+}
+.texti{
+  color: #1EA554;
+font-size: calc(4vh + 3vw);
+font-weight: bold;
+z-index: 1;
+position: absolute;
+margin-top: -30%;
+margin-left: 50%;
+
+}
+.Resi{
+  margin-top: 10rem;
+  color:#1EA554;
+  float: left;
+  padding-left: 5%;
+  font-size: 300%;
+}
+.width-15px{
+  width: 25rem!important;
+  height:4rem;
+  background-color: #1EA554;
+  color: white;
+}
+.book{
+  background-color: #1EA554;
+  color: white;
+  margin-left: 10%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+}
+.part5 {
+  display: grid;
+  grid-template-colums: repeat(6, 1fr);
+  min-height: 100vh;
+}
+
+.container.group1,
+.container.group2 {
+  display: contents;
+}
+
+.item1 {
+  grid-column: 3/ span 2;
+  grid-row: 2 /span 2;
+  background-color: white;
+border: 1vw solid transparent;
+ border-image-slice: 10%;
+  border-image: url("leaf.png") 12 stretch;
+    padding-left: 10px;
+    color: #1EA554;
+}
+
+.item2 {
+  grid-row: 3/span 2;
+  grid-column: 1 /span 2;
+    background-color: white;
+    border: 1vw solid transparent;
+     border-image-slice: 10%;
+      border-image: url("leaf.png") 12 stretch;
+color: #1EA554;
+}
+
+.item3 {
+  grid-row: 1 /span 2;
+  grid-column: 5/span 2;
+  background-color: white;
+  border: 1vw solid transparent;
+   border-image-slice: 10%;
+    border-image: url("leaf.png") 12 stretch;
+    color: #1EA554;
+}
+
+.item4 {
+  grid-row: 4/span 2;
+  grid-column: 3 /span 2;
+  background-color: white;
+  border: 1vw solid transparent;
+   border-image-slice: 10%;
+    border-image: url("leaf.png") 12 stretch;
+    color: #1EA554;
+}
+
+.item5 {
+  grid-row: 3/span 2;
+  grid-column: 5 / span 2;
+    background-color: white;
+    border: 1vw solid transparent;
+     border-image-slice: 10%;
+      border-image: url("leaf.png") 12 stretch;
+      color: #1EA554;
+}
+
+.item6 {
+  grid-row: 5/span 2;
+  grid-column: 5 / span 2;
+color: #1EA554;
+  background-color: white;
+  border: 1vw solid transparent;
+   border-image-slice: 10%;
+    border-image: url("leaf.png") 12 stretch;
+}
+.but{
+  background-color: #1EA554;
+}
+pre{
+  font-size: 14px;
+}
+
+ .item:hover{
+    background-color: #8ED7AB;
+}
+.ite:hover{
+   background-color: #8ED7AB;
+}
+/* demo*/
+
+[class^=item] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2vh + 2vw)
+}
+/*PATIENT CARE*/
+.Patient{
+  margin-top: 10rem;
+  color:#1EA554;
+  float: right;
+  padding-left: 5%;
+  font-size: 300%;
+}
+.part51 {
+  display: grid;
+  grid-template-colums: repeat(6, 1fr);
+  min-height: 100vh
+}
+
+.container.group10,
+.container.group20 {
+  display: contents;
+}
+
+.item11 {
+  grid-column: 3/ span 2;
+  grid-row: 2 /span 2;
+  background-color: white;
+border: 1vw solid transparent;
+ border-image-slice: 10%;
+  border-image: url("leaf.png") 12 stretch;
+    padding-left: 10px;
+}
+
+.item21 {
+  grid-row: 3/span 2;
+  grid-column: 1 /span 2;
+    background-color: white;
+    border: 1vw solid transparent;
+     border-image-slice: 10%;
+      border-image: url("leaf.png") 12 stretch;
+
+}
+
+.item31{
+  grid-row: 1 /span 2;
+  grid-column: 1/span 2;
+  background-color: white;
+  border: 1vw solid transparent;
+   border-image-slice: 10%;
+    border-image: url("leaf.png") 12 stretch;
+}
+
+.item41 {
+  grid-row: 4/span 2;
+  grid-column: 3 /span 2;
+  background-color: white;
+  border: 1vw solid transparent;
+   border-image-slice: 10%;
+    border-image: url("leaf.png") 12 stretch;
+}
+
+.item51 {
+  grid-row: 3/span 2;
+  grid-column: 5 / span 2;
+    background-color: white;
+    border: 1vw solid transparent;
+     border-image-slice: 10%;
+      border-image: url("leaf.png") 12 stretch;
+}
+
+.item61 {
+  grid-row: 5/span 2;
+  grid-column: 1 / span 2;
+
+  background-color: white;
+  border: 1vw solid transparent;
+   border-image-slice: 10%;
+    border-image: url("leaf.png") 12 stretch;
+}
+
+
+/* demo*/
+
+[class^=ite] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2vh + 2vw)
+}
+/*Consult*/
+.consult{
+  margin-top: 10%;
+  background-color: white;
+  color: black;
+  float: right;
+  height: 32vh;
+  width: 40vw;
+}
+.cons{
+  border-radius: 20px;
+  padding-left: 15px;
+}
+.consult:hover{
+  background-color: #8ED7AB;
+}
+/*Team*/
+.staff{
+  color: #0CFA4F;
+  float:left;
+  margin-top: 40%;
+text-align: center;
+
+}
+.team{
+    margin-top: 50%;
+  color:white;
+  float:left;
+  width: 50%;
+    font-size: calc(1vh + 1vw)
+
+}
+.flo{
+  margin-top: 20%;
+}
+/*Carousel*/
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
+  color:green;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faq {
+    background-color: green;
+    border: 1px solid #c1c4c7;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq.active {
+    background-color: rgb(220, 214, 226);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: '\f075';
+  font-family: 'Font Awesome 5 Free';
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq-title {
+    margin: 0 35px 0 0;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0 ;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .fa-times {
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+    color: #222;
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
+
+.mid{
+  margin-left: 30%;
+}
+
+/*FOOTER*/
+
+#footer {
+    background-color: #fff;
+}
+
+.social-icon {
+    margin: 20px 30px;
+    color: white;
+    font-size: 2rem;
+  }
+
+.container-fluid-footer{
+    padding: 5% 15%;
+    background-color: #1D2529;
+    text-align: center;
+}
