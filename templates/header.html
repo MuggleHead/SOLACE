@@ -77,7 +77,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <button type="button" class="btn btn-success">START A FUNDRAISER</button>
+                    <button id="button" type="button" class="btn btn-success">START A FUNDRAISER</button>
                   </li>
 
                   <li class="nav-item">
@@ -91,5 +91,29 @@
             </div>
 
         </nav>
+        <div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+      <div class="donations">
+        <div class="donations__progress-bar"></div>
+        <h2 class="donations__progress">
+          $<span class="donations__amount">0</span> / $75,000</h2>
+        <div class="donations__text">
+          Join the 
+          <span class="donations__donors">55K</span>
+          other donors who have already supported people iin war.
+        </div>
+        <form class="donations__form">
+          <span class="donations__input-icon">$</span>
+          <input class="donations__input" type="number" value="50" title="$"/>
+          <input type="submit" class="donations__submit" />
+          <button class="donations__reset">Reset</button>
+        </form>
+      </div>
+    </div>
+</div>
 
     </header>

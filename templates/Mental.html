@@ -1,4 +1,95 @@
-{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <!-- CSS file link -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Mstyle.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/direct.css') }}">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Jost:wght@300&family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- title -->
+
+    <title>Solace</title>
+
+    <!-- font awesome -->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark black">
+
+            <div class="container-fluid">
+
+              <a class="navbar-brand noHover" href="#"><span class="sletterfont">S</span><span class="olacefont">OLACE</span></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+
+                <ul class="navbar-nav ms-auto">
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">HOME</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="{{url_for('search')}}">ESSENTIALS</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="{{url_for('trauma')}}">TRAUMA</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="{{url_for('blogs')}}">BLOGS</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="">CONTACT</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-success">START A FUNDRAISER</button>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{url_for('chatbot')}}"><button type="button" class="btn btn-success">Chat with Us</button></a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+        </nav>
+
+    </header>
 <!---FRONT------>
 <div class="container-fluid">
 <img class="float-sm-md-end img-fluid FronDoc" src="static/images/FrontDoc.jpg" alt="">
@@ -30,35 +121,47 @@
 <section class="part5 container ">
   <div class="container group1">
 
-    <div class="item item1">
+    <div class="item item1" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;">
     <pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="item item2 "><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Women Care</b></span>
+    <div class="item item2 " style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Women Care</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="item item3 "><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Shelter</b></span>
+    <div class="item item3 " style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Shelter</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
   </div>
   <div class="container group2">
-    <div class="item item4"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Physiatry</b></span>
+    <div class="item item4" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Physiatry</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="item item5"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Deaddiction</b></span>
+    <div class="item item5" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Deaddiction</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="item item6"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
+    <div class="item item6" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
@@ -71,34 +174,46 @@ in a safe environment</pre></div>
 <h2 class="Patient">Patient Care <br>Services</h2>
 <section class="part5 container ">
   <div class="container group10">
-    <div class="ite item11"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
+    <div class="ite item11" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="ite item21 "><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
+    <div class="ite item21 " style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="ite item31 "><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
+    <div class="ite item31 " style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
   </div>
   <div class="container group20">
-    <div class="ite item41"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
+    <div class="ite item41" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="ite item51"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
+    <div class="ite item51" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
 in a safe environment</pre></div>
-    <div class="ite item61"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
+    <div class="ite item61" style="border: 1vw solid transparent;
+    border-image-slice: 10%;
+     border-image: url('static/images/leaf.png') 12 stretch;"><pre><span style="color:#1EA554; font-size:1.3rem;"><b>Child Counselling</b></span>
 Consult with only female
 doctors,and receive care
 from female nurses
