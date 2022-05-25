@@ -8,7 +8,8 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "princeviditauditaakshay"
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
+# app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://qhyjefvjdfateb:4b0b52435975215b716538567b04ca608da37709122a30e20a40e9bd218d48a7@ec2-54-211-255-161.compute-1.amazonaws.com:5432/dbjjl39edi35kd"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 Bootstrap(app)
