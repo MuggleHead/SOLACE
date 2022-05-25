@@ -78,7 +78,7 @@ margin-left: 50%;
 }
 .part5 {
   display: grid;
-  grid-template-colums: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   min-height: 100vh;
 }
 
@@ -178,7 +178,7 @@ pre{
 }
 .part51 {
   display: grid;
-  grid-template-colums: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   min-height: 100vh
 }
 
