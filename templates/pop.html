@@ -1,0 +1,76 @@
+
+{% include "header.html" %}
+
+  <div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+      <div class="donations">
+        <div class="donations__progress-bar"></div>
+        <h2 class="donations__progress">
+          $<span class="donations__amount">0</span> / $75,000</h2>
+        <div class="donations__text">
+          Join the 
+          <span class="donations__donors">55K</span>
+          other donors who have already supported people iin war.
+        </div>
+        <form class="donations__form">
+          <span class="donations__input-icon">$</span>
+          <input class="donations__input" type="number" value="50" title="$"/>
+          <input type="submit" class="donations__submit" />
+          <button class="donations__reset">Reset</button>
+        </form>
+      </div>
+    </div>
+</div>
+  </header>
+  <br>
+  <br>
+    <div class="container">
+        <div class="nav"></div>
+        <div class="mapvid">
+            <div class="context">
+              <div class="mg">
+                <a>
+                    <img src="{{ url_for('static', filename='images/mapvg.svg') }}" class="img-fluid">
+                    <img src="{{ url_for('static', filename='images//mapred.svg') }}" class="img-fluid">
+                </a>
+            </div>
+              <div class="el elem">
+                <a href="templates/direct.html">
+                <video class="Fridge" width="450" controls>
+                  <source src="static/videos/Soldiers Doing Live Ammunition Training.mp4">
+                </video>
+              </a>
+                <div class="words">
+                  <div class="grn">
+                    Library in cherniv
+                    <span>a prospering landmark that turns into a cater after a 500 kg bomb
+                      hits it.</span>
+                  </div>
+                </div>              </div>
+              <div class="el elem1">
+                <img src="static/images/last.png" alt="">
+                <div class="words">
+                  <div class="grn">
+                    Anti-war movement is a social movement,
+                    <span>  usually in opposition to a particular nation's decision to start or carry on an armed conflict.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="el elem2">
+                <span><img src="static/images/sleepkido.png" alt=""></span>
+                <div class="words">
+                  <div class="grn">
+                    We suffered from illness
+                    <span> due to inadequate food supply and trauma. The trapped British army evacuates to England from Dunkirk, France, surviving to fight another day.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+    {% include "footer.html" %}

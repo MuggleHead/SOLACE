@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Maitree:wght@500&display=swap");
 body {
   color: #ffffff;
   background-color: #000000;
   padding: 0px;
   margin: 0px;
   text-align: center;
+}
+
+nav .black {
+  background-color: #000000;
 }
 
 .landing {
@@ -15,12 +20,14 @@ body {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: 'img1 img2 img3' 'war war war' 'img4 img5 img6';
+      grid-template-areas: 'img1 img2 img3'
+ 'war war war'
+ 'img4 img5 img6';
   place-content: center;
   padding: 2vh 5vw;
   -webkit-column-gap: 4vw;
           column-gap: 4vw;
-  background-image: url("../Images/landbg.jpg");
+  background-image: url("../templates/index.html");
   background-position: auto;
   background-size: cover;
   background-attachment: fixed;
@@ -29,9 +36,9 @@ body {
 .landing img {
   height: 150px;
   width: 300px;
-  opacity: 1;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  opacity: 0.5;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
 }
@@ -41,6 +48,7 @@ body {
           filter: blur(0);
   height: 250px;
   width: 500px;
+  opacity: 1;
 }
 
 .landing .img1 {
@@ -98,6 +106,11 @@ body {
   font-size: 14rem;
   place-self: center;
   color: #fffefe;
+  font-family: 'Maitree', serif;
+}
+
+.landing .war:hover {
+  color: #e42525;
 }
 
 .WOF {
@@ -137,7 +150,6 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  z-index: -1;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
@@ -181,12 +193,16 @@ body {
 .news {
   height: 200vh;
   width: 90vw;
-  margin: 10vh 5vw;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: '. i3 a3' 'i4 a4 .' '. a5 i5';
-  -ms-grid-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      grid-template-areas: '. i3 a3'
+ 'i4 a4 .'
+ '. a5 i5';
+  -ms-grid-rows: 0.5fr 0.5fr 0.5fr;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   border-top: #555353 solid 4px;
@@ -195,7 +211,15 @@ body {
 .news img {
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
+}
+
+.news iUp {
+  z-index: 3;
+}
+
+.news iDown {
+  z-index: -3;
 }
 
 .news div.center {
@@ -203,7 +227,6 @@ body {
   border-right: #555353 solid 4px;
   height: 100%;
   width: 100%;
-  z-index: -3;
 }
 
 .news div.left {
@@ -238,9 +261,8 @@ body {
 }
 
 .news div.img3 img {
-  position: absolute;
   height: 65%;
-  width: 80%;
+  width: 100%;
   right: -8vw;
   top: 2vh;
 }
@@ -249,11 +271,9 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: i4;
-  position: relative;
 }
 
 .news div.img4 img {
-  position: absolute;
   height: 65%;
   width: 100%;
   right: -8vw;
@@ -263,11 +283,9 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: i5;
-  position: relative;
 }
 
 .news div.img5 img {
-  position: absolute;
   height: 80%;
   left: -8vw;
   top: 2vh;
@@ -284,7 +302,6 @@ body {
 
 .news .ab {
   font-size: 2.5rem;
-  z-index: 4;
 }
 
 .news .about1 {
@@ -311,5 +328,185 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: a5;
+}
+
+/* navbar style */
+.container-fluid {
+  padding: 0% 12%;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.sletterfont {
+  color: white;
+  font-size: 4.5rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.olacefont {
+  color: #1EA554;
+  font-size: 2rem;
+  font-family: 'Jost', sans-serif;
+}
+
+.noHover {
+  pointer-events: none;
+}
+
+#footer {
+  background-color: #fff;
+}
+
+.social-icon {
+  margin: 20px 30px;
+  color: white;
+  font-size: 2rem;
+}
+
+.container-fluid-footer {
+  padding: 5% 15%;
+  background-color: #1D2529;
+  text-align: center;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #999;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 100;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  background: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: -100px;
+  /*Half the value of width to center div*/
+  margin-top: -100px;
+  /*Half the value of height to center div*/
+  z-index: 200;
+}
+
+#popupclose {
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.popupcontent {
+  padding: 10px;
+}
+
+#button {
+  cursor: pointer;
+}
+
+.donations {
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 2em;
+  max-width: 400px;
+  margin: 10em auto;
+  background: white;
+  overflow: hidden;
+  color: #000000;
+}
+
+.donations__progress-bar {
+  background: orange;
+  height: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3D(-100%, 0, 0);
+          transform: translate3D(-100%, 0, 0);
+  width: 100%;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.donations__progress {
+  text-align: center;
+}
+
+.donations__text {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.donations__donors {
+  font-weight: bold;
+}
+
+.donations__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.3em;
+}
+
+.donations__input,
+.donations__submit,
+.donations__reset {
+  font-size: inherit;
+  border: none;
+  padding: 0.5em 0.8em;
+  border-radius: 5px;
+  width: 45%;
+  min-width: 100px;
+  margin-bottom: 1em;
+}
+
+.donations__submit {
+  background: #1cbc2c;
+  color: white;
+}
+
+.donations__reset {
+  color: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.donations__input {
+  border: 1px solid #eee;
+  padding-left: 1em;
+}
+
+.donations__input-icon {
+  position: absolute;
+  color: gray;
+  line-height: 1.3;
+  padding: 0.5em 0.3em;
+  pointer-events: none;
 }
 /*# sourceMappingURL=homeStyle.css.map */

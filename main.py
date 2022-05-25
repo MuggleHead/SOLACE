@@ -57,7 +57,7 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/search", methods=['GET', 'POST'])
+@app.route("/essentials", methods=['GET', 'POST'])
 def search():
     form = SolaceForm()
     if form.validate_on_submit():
@@ -69,6 +69,21 @@ def search():
         return render_template("show_post.html", all_hospitals=hospitals, all_campaigns=campaigns, all_ngos=ngos,
                                form_health=health, form_location=location)
     return render_template("hospitals.html", form=form)
+
+
+@app.route("/blogs", methods=['GET', 'POST'])
+def blogs():
+    return render_template("pop.html")
+
+
+@app.route("/trauma")
+def trauma():
+    return render_template("mental.html")
+
+
+@app.route("/chatbot")
+def chatbot():
+    return render_template("chatbot.html")
 
 
 if __name__ == "__main__":

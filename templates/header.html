@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/homeStyle.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/hospitals.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/popcuss.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Mstyle.css') }}">
 
     <!-- google fonts -->
 
@@ -54,27 +56,31 @@
                 <ul class="navbar-nav ms-auto">
 
                   <li class="nav-item Hover">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">HOME</a>
                   </li>
 
                   <li class="nav-item Hover">
-                    <a class="nav-link" href="#">ESSENTIALS</a>
+                    <a class="nav-link" href="{{url_for('search')}}">ESSENTIALS</a>
                   </li>
 
                   <li class="nav-item Hover">
-                    <a class="nav-link" href="#">TRAUMA</a>
+                    <a class="nav-link" href="{{url_for('trauma')}}">TRAUMA</a>
                   </li>
 
                   <li class="nav-item Hover">
-                    <a class="nav-link">BLOGS</a>
+                    <a class="nav-link" href="{{url_for('blogs')}}">BLOGS</a>
                   </li>
 
                   <li class="nav-item Hover">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="">CONTACT</a>
                   </li>
 
                   <li class="nav-item">
                     <button type="button" class="btn btn-success">START A FUNDRAISER</button>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{url_for('chatbot')}}"><button type="button" class="btn btn-success">Chat with Us</button></a>
                   </li>
 
                 </ul>
