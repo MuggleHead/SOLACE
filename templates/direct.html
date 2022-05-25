@@ -1,70 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./direct.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Jost:wght@300&family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js">
-    </script>
-</head>
-<body>
-    <header>
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-            <div class="container-fluid">
-
-              <a class="navbar-brand noHover" href="#"><span class="sletterfont">S</span><span class="olacefont">OLACE</span></a>
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-
-                <ul class="navbar-nav ms-auto">
-
-                  <li class="nav-item Hover">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                  </li>
-
-                  <li class="nav-item Hover">
-                    <a class="nav-link" href="#">ESSENTIALS</a>
-                  </li>
-
-                  <li class="nav-item Hover">
-                    <a class="nav-link" href="#">TRAUMA</a>
-                  </li>
-
-                  <li class="nav-item Hover">
-                    <a class="nav-link">BLOGS</a>
-                  </li>
-
-                  <li class="nav-item Hover">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <button type="button" class="btn btn-success">START A FUNDRAISER</button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
+{% include "header.html" %}
 
     <div class="cont">
         <div class="uimg">
-            <img src="./exposure.png" class="actual">
+            <img src="static/images/exposure.png" class="actual">
         </div>
         <div class="words">
             <div class="grn">
@@ -79,6 +17,5 @@
             </p>
           </div>
     </div>
-    
-</body>
-</html>
+
+{% include "footer.html" %}
