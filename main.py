@@ -78,7 +78,7 @@ def blogs():
     return render_template("blogpage.html")
 
 
-@app.route("/trauma")
+@app.route("/trauma",methods=['GET','POST'])
 def trauma():
     return render_template("mental.html")
 
