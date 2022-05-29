@@ -18,7 +18,7 @@ function bot() {
   else if (questionNum == 1) {
   output.innerHTML = '<h1>Good to know!</h1>';
   document.getElementById("input").value = "";
-  question = '<h1>What do you feel abhout wars?</h1>';
+  question = '<h1>What do you feel about wars?</h1>';
   setTimeout(timedQuestion, 2000);
   }
  else if(questionNum == 2) {
