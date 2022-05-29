@@ -85,7 +85,9 @@ section.cof{
     margin-top: 90%;
     margin-left: -16%;
 }
-
+.hrn{
+    margin:0;
+}
 @media (max-width: 650px){
     .map{
         display: none;
