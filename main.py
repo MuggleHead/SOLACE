@@ -80,7 +80,7 @@ def blogs():
 
 @app.route("/trauma",methods=['GET','POST'])
 def trauma():
-    return render_template("mental.html")
+    return render_template("Mental.html")
 
 
 @app.route("/chatbot")
