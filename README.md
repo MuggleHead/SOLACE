@@ -10,7 +10,7 @@ Find the website here:https://github.com/MuggleHead/SOLACE
 See the Presentation:http://surl.li/cbjrn
 
 # What is Solace?
-SOLACE is a web platform which aims to provide relief to war affected people. All sorts of aids to people at warzone and also helping them recover from such a devastating situation. As we know in such critical times medical help is the most essential thing we require but as there is a state of panic and rush amon people they crowd at medical centres which creates problem and wastes time of staff.
+SOLACE is a web platform which aims to provide relief to war affected people. All sorts of aids to people at warzone and also helping them recover from such a devastating situation. As we know in such critical times medical help is the most essential thing we require but as there is a state of panic and rush among people they crowd at medical centres which creates problem and wastes time of staff.
 ## What now?
 In order to avoid such conditions SOLACE will show the availability of all the necessary ammenties which are available in Hospital or not. This will avoid wastage of time of Doctors as well as Patients. SOLACE also provides financial and mental aid to overcome their condition and live a normal life.
 
