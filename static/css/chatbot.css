@@ -4,13 +4,13 @@
 }
 
 body {
-	background-color: #f0db4f;
+	background-color: black;
 }
 
 h1, p {
 	font-family: sans-serif;
 	text-align: center;
-	color: #323330;
+	color: #1ea554;
 	font-size:  100px;
 }
 

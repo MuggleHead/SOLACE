@@ -75,7 +75,7 @@ def search():
 
 @app.route("/blogs", methods=['GET', 'POST'])
 def blogs():
-    return render_template("pop.html")
+    return render_template("blogpage.html")
 
 
 @app.route("/trauma")
@@ -86,6 +86,11 @@ def trauma():
 @app.route("/chatbot")
 def chatbot():
     return render_template("chatbot.html")
+
+
+@app.route("/direct")
+def direct():
+    return render_template("direct.html")
 
 
 if __name__ == "__main__":

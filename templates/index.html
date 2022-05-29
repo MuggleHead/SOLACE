@@ -1,4 +1,120 @@
-{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+    <!-- CSS file link -->
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homeStyle.css') }}">
+    
+    
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Jost:wght@300&family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!-- title -->
+
+    <title>Solace</title>
+
+    <!-- font awesome -->
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+
+</head>
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark black">
+
+            <div class="container-fluid">
+
+              <a class="navbar-brand noHover" href="#"><span class="sletterfont">S</span><span class="olacefont">OLACE</span></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+
+                <ul class="navbar-nav ms-auto">
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link active" aria-current="page" href="{{url_for('home')}}">HOME</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="{{url_for('search')}}">ESSENTIALS</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="{{url_for('trauma')}}">TRAUMA</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="{{url_for('blogs')}}">BLOGS</a>
+                  </li>
+
+                  <li class="nav-item Hover">
+                    <a class="nav-link" href="#footer">CONTACT</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <button id="button" type="button" class="btn btn-success">START A FUNDRAISER</button>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="{{url_for('chatbot')}}"><button type="button" class="btn btn-success">Chat with Us</button></a>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+        </nav>
+        <div id="overlay"></div>
+<div id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">X</span>
+    </div>
+    <div class="popupcontent">
+      <div class="donations">
+        <div class="donations__progress-bar"></div>
+        <h2 class="donations__progress">
+          $<span class="donations__amount">0</span> / $75,000</h2>
+        <div class="donations__text">
+          Join the 
+          <span class="donations__donors">55K</span>
+          other donors who have already supported people iin war.
+        </div>
+        <form class="donations__form">
+          <span class="donations__input-icon">$</span>
+          <input class="donations__input" type="number" value="50" title="$"/>
+          <input type="submit" class="donations__submit" />
+          <button class="donations__reset">Reset</button>
+        </form>
+      </div>
+    </div>
+</div>
+
+    </header>
 
     <div class="landing">
       <img src="static/images/PIC1.jpg" alt="" class="img1" />
@@ -20,24 +136,57 @@
     </div>
     <br />
     <div class="news">
-      <div class="ab about3">Battle and Bloodshed: The Medieval World at War</div>
+      <div class="ab about3">America Declares <span>war</span> against other nations over continous dispute</div>
       <div class="center img3">
-        <img src="static/images/PIC1.jpg" alt="" class="img3" />
+        <img src="static/images/Nimg3.jpg" alt="" class="img3" />
       </div>
       <div class="center ab about4">
-        Battle and Bloodshed: The Medieval World at War
+        Battle and <span>Bloodshed:</span>  The Medieval World at War
       </div>
       <div class="img4">
-        <img src="static/images/PIC1.jpg" alt="" class="img4" />
+        <img src="static/images/Nimg4.webp" alt="" class="img4" />
       </div>
       <div class="center ab about5">
-        Battle and Bloodshed: The Medieval World at War
+        Medics battle to save lives as <span>casualties</span> mount
       </div>
       <div class="img5">
-        <img src="static/images/PIC1.jpg" alt="" class="img5" />
+        <img src="static/images/Nimg5.webp" alt="" class="img5" />
       </div>
     </div>
 
 
 
-{% include "footer.html" %}
+    <footer id="footer">
+
+      <div class="container-fluid-footer">
+
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-google"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fab fa-linkedin"></i>
+        <i class="social-icon fas fa-envelope"></i>
+
+      </div>
+
+      <div class="text-center p-4" style="background-color: #13181B; color: white;">
+
+      © 2021 Copyright 2022: SOLACE
+
+      </div>
+
+  </footer>
+  <script>
+    const toggles = document.querySelectorAll('.faq-toggle');
+    
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            toggle.parentNode.classList.toggle('active');
+        });
+    });
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/hApp.js') }}"></script>
+</body>
+
+</html>

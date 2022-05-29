@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/julietta-messie');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav{
+    width: 700px;
+    height: 200px;
+}
+.sletterfont{
+    font-family: 'Julietta Messie', sans-serif;
+    color: white;
+    font-size: 4.5rem;
+}
+.container{
+    height: 100vh;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+    grid-template-areas: 
+            "vid   map  "
+            "pla   map  "
+            "cof   map  "; 
+}
+map{
+    grid-area: map;
+}
+.respomap{
+    background-image: url(static/images/mapvg.svg);
+    background-size: contain;
+    background-repeat: no repeat;
+    width: 100%;
+    margin-left: 6.8rem;
+}
+
+section.vid{
+    grid-area: vid;
+}
+.grn{
+    color: #1EA554;
+    font-size: 100%;
+}
+.words .grn span{
+    color: white;
+    font-size: 100%;
+}
+.el-elem{
+    margin-top: 30%;
+    margin-left: -16%;
+}
+section.pla{
+    grid-area: pla;
+    font-size: 100%;
+}
+.second{
+    width: 80%;
+    background-image: url(./mapvg.svg);
+    background-size: contain;
+    background-repeat: no repeat;
+    margin-top: 30%;
+}
+.el_elem1{
+    margin-top: 50%;
+    margin-left: -16%;
+}
+section.cof{
+    grid-area: cof;
+    font-size: 100%;
+}
+.third{
+    width: 80%;
+    background-image: url(./mapvg.svg);
+    background-size: contain;
+    background-repeat: no repeat;
+    margin-top: 30%;
+}
+.el_elem2{
+    margin-top: 90%;
+    margin-left: -16%;
+}
+
+@media (max-width: 650px){
+    .map{
+        display: none;
+    }
+    .container{
+        margin: 0px;
+        background-size: 100%;
+        width: 100%;
+    }
+}

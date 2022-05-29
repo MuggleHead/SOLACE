@@ -258,6 +258,7 @@ nav .black {
   -ms-grid-column: 2;
   grid-area: i3;
   position: relative;
+  filter: grayscale(100%);
 }
 
 .news div.img3 img {
@@ -271,6 +272,7 @@ nav .black {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: i4;
+  filter: grayscale(100%);
 }
 
 .news div.img4 img {
@@ -283,6 +285,7 @@ nav .black {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: i5;
+  filter: grayscale(100%);
 }
 
 .news div.img5 img {
@@ -347,17 +350,6 @@ nav .black {
   color: white;
 }
 
-.sletterfont {
-  color: white;
-  font-size: 4.5rem;
-  font-family: 'Dancing Script', cursive;
-}
-
-.olacefont {
-  color: #1EA554;
-  font-size: 2rem;
-  font-family: 'Jost', sans-serif;
-}
 
 .noHover {
   pointer-events: none;
