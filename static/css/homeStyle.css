@@ -341,7 +341,18 @@ nav .black {
 .navbar {
   padding: 0;
 }
+.sletterfont{
+    font-family: 'Julietta Messie', sans-serif;
+    color: white;
+    font-size: 4.5rem;
+}
 
+
+.olacefont{
+    color: #1EA554;
+    font-size: 2rem;
+    font-family: 'Jost', sans-serif;
+}
 .nav-item {
   padding: 0 18px;
 }
