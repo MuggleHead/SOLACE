@@ -1,4 +1,4 @@
-# SOLACE
+# SOLACE - Won the third position in hack the crisis
 
 ![HOME](https://user-images.githubusercontent.com/91135324/170495917-a0a60773-2cec-4294-8c6e-276654e53c55.png)
 SOLACE as the name suggests gives comfort to people after war and help them recover from it.
